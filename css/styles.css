@@ -1,0 +1,265 @@
+@font-face {
+    font-family: magallane;
+    src: url(fonts/Latinotype-MagallanesRegular.otf);
+}
+@font-face {
+    font-family: magallaneLight;
+    src: url(fonts/Latinotype-MagallanesLight.otf);
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.spacer {
+    width: 100%;
+    height: 1000px;
+    background-color: #cccccc;
+}
+
+
+/* ALL TEMPLATES */
+.blog-row {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.svg-nest {
+    width: 100%;
+    position: relative;
+    height: 1024px;
+}
+#one-one/*, #two-three*/ {
+    stroke-dasharray: 1510;
+    stroke-dashoffset: 1510;
+    animation: dash 2s linear forwards;
+}
+#one-two, #one-three, #one-five/*, #two-one, #two-two, #two-five*/ {
+    stroke-dasharray: 910;
+    stroke-dashoffset: 910;
+    animation: dash 2s linear forwards;
+}
+#one-four/*, #two-four*/ {
+    stroke-dasharray: 670;
+    stroke-dashoffset: 670;
+    animation: dash 2s linear forwards;
+}
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+
+/* TEMPLATE ONE */
+#template1 .path {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+#one-one, #one-three, #one-five {
+    z-index: 0;
+}
+#one-two, #one-four {
+    z-index: 1;
+}
+#template1 #image1 {
+    width: 415px;
+    height: 478px;
+    position: absolute;
+    top: 28px;
+    left: 242px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-filter: brightness(50%);; /* Safari 6.0 - 9.0 */
+    filter: brightness(50%);
+}
+#template1 #imageLink1 {
+    width: 415px;
+    height: 478px;
+    position: absolute;
+    top: 28px;
+    left: 242px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#template1 #image2 {
+    width: 243px;
+    height: 281px;
+    position: absolute;
+    top: 467px;
+    left: 144px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#template1 #imageLink2 {
+    width: 243px;
+    height: 281px;
+    position: absolute;
+    top: 467px;
+    left: 144px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#template1 #image3 {
+    width: 244px;
+    height: 280px;
+    position: absolute;
+    top: 717px;
+    left: 273px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#template1 #imageLink3 {
+    width: 244px;
+    height: 280px;
+    position: absolute;
+    top: 717px;
+    left: 273px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#template1 #image1, #template1 #image2, #template1 #image3 {
+    z-index: 0;
+}
+#template1 #imageLink1, #template1 #imageLink2, #template1 #imageLink3 {
+    z-index: 2;
+}
+
+#template1 .svg-nest h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: magallaneLight;
+    font-weight: 100;
+    text-align: right;
+    color: #a09894;
+    position: absolute;
+    top: 198px;
+    left: 88px;
+}
+#template1 .svg-nest h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: magallaneLight;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 209px;
+    left: 242px;
+    z-index: 1;
+    width: 415px;
+}
+
+
+/* TEMPLATE TWO */
+#template2 .path {
+    display: block;
+    position: absolute;
+    left: 0;
+}
+#two-one, #two-three, #two-five {
+    z-index: 0;
+}
+#two-two, #two-four {
+    /*z-index: 1;*/
+    z-index: 0;
+}
+#template2 #image1 {
+    width: 415px;
+    height: 478px;
+    position: absolute;
+    top: 263px;
+    left: 202px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-filter: brightness(50%);; /* Safari 6.0 - 9.0 */
+    filter: brightness(50%);
+}
+/*
+#template2 #imageLink1 {
+    width: 415px;
+    height: 478px;
+    position: absolute;
+    top: 263px;
+    left: 202px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+*/
+#template2 #image2 {
+    width: 243px;
+    height: 281px;
+    position: absolute;
+    top: 62px;
+    left: 72px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/*
+#template2 #imageLink2 {
+    width: 243px;
+    height: 281px;
+    position: absolute;
+    top: 62px;
+    left: 72px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+*/
+#template2 #image3 {
+    width: 244px;
+    height: 280px;
+    position: absolute;
+    top: 682px;
+    left: 484px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/*
+#template2 #imageLink3 {
+    width: 244px;
+    height: 280px;
+    position: absolute;
+    top: 682px;
+    left: 484px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+*/
+/*
+#template2 #image1, #template2 #image2, #template2 #image3 {
+    z-index: 9999;
+}
+#template2 #imageLink1, #template2 #imageLink2, #template2 #imageLink3 {
+    z-index: 2;
+}
+*/
+
+#template2 .svg-nest h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: magallaneLight;
+    font-weight: 100;
+    text-align: left;
+    color: #a09894;
+    position: absolute;
+    top: 207px;
+    left: 523px;
+}
+#template2 .svg-nest h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: magallaneLight;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 448px;
+    left: 202px;
+    z-index: 1;
+    width: 415px;
+}
